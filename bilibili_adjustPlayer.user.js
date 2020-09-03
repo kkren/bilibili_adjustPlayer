@@ -1496,6 +1496,9 @@
 								if (event.target.nodeName === "TEXTAREA") {
 									return;
 								}
+								if (event.target.classList.contains('ql-editor')) {
+									return;
+								}
 
 								var focused = document.activeElement;
 								if (focused.nodeName === "IFRAME") {
