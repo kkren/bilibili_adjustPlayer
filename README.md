@@ -1,7 +1,10 @@
+# **大家去用 [Bilibili-Evolved](https://github.com/the1812/Bilibili-Evolved) 吧，这个脚本应该不会更新了。**
+
 # 哔哩哔哩（bilibili.com）播放器调整
 
 一个B站的用户脚本，调整B站播放器设置，增加一些实用的功能。
 原作者为 mickey7q7（账号已消失），本人在最后一版本的基础上适配了 bilibili 播放器的最新更新，并试着添加一些新功能。
+
 
 [![](https://img.shields.io/badge/%E5%AE%89%E8%A3%85%E7%9B%B4%E9%93%BE-%F0%9F%90%92-blue.svg)](https://github.com/kkren/bilibili_adjustPlayer/raw/master/bilibili_adjustPlayer.user.js "请确认已安装并启动脚本管理器")  [![](https://img.shields.io/badge/🌎-English-red.svg)](README-en.md)   
 ##  脚本功能
