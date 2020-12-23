@@ -494,6 +494,19 @@
 				}
 			}
 		},
+		autoLikeOn: function(set, callback){
+			if(typeof set != 'undefined'){
+				try{
+					if(document.getElementsByClassName('like on').length == 0){
+						let btn = document.getElementsByClassName('like')[0];
+						doClick(btn);
+					}
+
+				}catch(e){
+					console.log('autoLikeOn: ' + e);
+				}
+			}
+		},
 		resizePlayer: function (set, width, ratio, videoInfoAndUpInfoPosition, isAutohideControlbar) {
 			if (typeof set !== 'undefined' && typeof width !== 'undefined') {
 				try {
@@ -1587,6 +1600,9 @@
 			setTimeout(function () {
 				adjustPlayer.autoLightOn(setting.autoLightOn);
 			}, 200);
+			setTimeout(function () {
+				adjustPlayer.autoLikeOn(setting.autoLikeOn);
+			}, 200);
 
 			//adjustPlayer.autoLoopVideo(setting.autoLoopVideo);
 			adjustPlayer.tabDanmulist(setting.tabDanmulist);
@@ -2338,6 +2354,7 @@
 							<span tooltip="使用帮助：&#10;1：开启“修改迷你播放器宽度”后，拖动迷你播放器右下角调节按钮，可以调整大小。&#10;2：此功能是“实验功能”，部分页面可能不起作用" class="tipsButton">[?]</span>
 						</div></label>
 						<label fname="autoLightOn"><input name="autoLightOn" type="checkbox"><span class="checkbox"></span>自动播放器关灯<span tooltip="使用帮助：&#10;1：在视频区域内点击右键进行开，关灯操作&#10;2：双击黑暗区域开灯。" class="tipsButton">[?]</span></label>
+						<label fname="autoLikeOn"><input name="autoLikeOn" type="checkbox"><span class="checkbox"></span>自动为视频点赞<span tooltip="使用帮助：&#10;1：当打开一个视频页面时将自动点赞" class="tipsButton">[?]</span></label>
             		</div>
             	</fieldset>
             </div>
